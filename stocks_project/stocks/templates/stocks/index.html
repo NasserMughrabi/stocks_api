@@ -1,0 +1,16 @@
+{% extends "stocks/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <form id="form_submit" action="">
+        <input id="stock" placeholder="Stock" type="text">
+        <input type="submit" value="submit">
+    </form>
+    <div id="result">
+        
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'stocks/index.js' %}"></script>
+{% endblock %}
