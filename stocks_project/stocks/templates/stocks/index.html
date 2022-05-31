@@ -2,12 +2,40 @@
 {% load static %}
 
 {% block body %}
-    <form id="form_submit" action="">
-        <input id="stock" placeholder="Stock" type="text">
-        <input type="submit" value="submit">
-    </form>
-    <div id="result">
-        
+    <header id="heads">
+        <div>
+            <form id="form_submit" action="">
+                <input id="stock" placeholder="Stock" type="text">
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </header>
+    <div class="container">
+        <div id="container-title">
+            <div id="market-div">MARKET &gt;</div>
+            <div id="stock-name"></div>
+        </div>
+        <div id="container-data">
+            <div id="left-div">
+                <div id="stock-titles">
+                    <div id="stock-ticker"></div>
+                    <div id="stock-etf-fullname">
+                        <div id="stock-fullname"></div>
+                        <div id="stock-ETF"></div>
+                    </div>
+                </div>
+                <div id="stock-data">
+                    <div id="price-div"></div>
+                    <div id="points-perc-div">
+                        <div id="perc-div"></div>
+                        <div id="points-div"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-div">
+
+            </div>
+        </div>
     </div>
 {% endblock %}
 
