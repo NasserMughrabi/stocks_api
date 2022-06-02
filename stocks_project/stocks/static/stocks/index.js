@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('form').onsubmit = function() {
         
         // clearInterval(defaultInterval);
-        // setInterval(fetchStockData, 500);
+        setInterval(fetchStockData, 500);
         return false;
         
     }

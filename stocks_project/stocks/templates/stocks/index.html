@@ -2,39 +2,37 @@
 {% load static %}
 
 {% block body %}
-    <header id="heads">
-        <div>
+    <div class="header">
+        <header>
             <form id="form_submit" action="">
                 <input id="stock" placeholder="Stock" type="text">
                 <input type="submit" value="submit">
             </form>
-        </div>
-    </header>
+        </header>
+    </div>
     <div class="container">
-        <div id="container-title">
+        <div id="container-header">
             <div id="market-div">MARKET &gt;</div>
-            <div id="stock-name"></div>
+            <div id="stock-name-div">AAPL</div>
+            <div id="stock-ETF-div">NASDAQ</div>
         </div>
-        <div id="container-data">
-            <div id="left-div">
-                <div id="stock-titles">
-                    <div id="stock-ticker"></div>
-                    <div id="stock-etf-fullname">
-                        <div id="stock-fullname"></div>
-                        <div id="stock-ETF"></div>
-                    </div>
-                </div>
-                <div id="stock-data">
-                    <div id="price-div"></div>
-                    <div id="points-perc-div">
-                        <div id="perc-div"></div>
-                        <div id="points-div"></div>
-                    </div>
-                </div>
+        <div id="container-body">
+            <div id="stock-ticker-div"><div id="name-ticker">AAPL</div></div>
+            <div id="stock-price-data">
+                <div id="price">149.25</div>
+                <div id="points-percentage"><div id="points">+0.52</div><div id="percentage">+0.10%</div></div>
             </div>
-            <div id="right-div">
-
-            </div>
+        </div>
+    </div>
+    <div class="popular-stocks">
+        <header class="pop-stocks-header">popular stocks</header>
+        <div class="pop-stocks">
+            <ul>
+                <li><div>Ticker</div><div>APPL</div><div>TSLA</div><div>AMZN</div><div>AMD</div><div>NVDA</div></li>
+                <li><div>Price</div><div>149.25</div><div>149.25</div><div>149.25</div><div>149.25</div><div>149.25</div></li>
+                <li><div>Point</div><div>+3.5</div><div>+3.5</div><div>+3.5</div><div>+3.5</div><div>+3.5</div></li>
+                <li><div>Percentage</div><div>+10.2</div><div>+10.2</div><div>+10.2</div><div>+10.2</div><div>+10.2</div></li>
+            </ul>
         </div>
     </div>
 {% endblock %}
