@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    cursor: default;
 }
 
 body{
@@ -31,9 +32,19 @@ body{
     width: 35vw;
     margin-top: 3rem;
     padding: 0%;
-    border-style: solid;
+    /* outline-style: solid;
+    outline-width: 0.1rem; */
     border-radius: 1rem;
+    outline-offset: 0.1rem;
     overflow: hidden;
+
+    /* width: 30rem;
+    height: 20rem; */
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+
+    backdrop-filter: blur(5px);
 }
 
 #container-header{
@@ -97,6 +108,7 @@ body{
     font-family: OpenSans-Light;
     font-size: 60px;
     font-weight: 400;
+    color: white;
 }
 
 #stock-price-data{
@@ -108,14 +120,13 @@ body{
 #price{
     background-color: pink;
     text-align: left;
-    width: 7rem;
+    min-width: 6rem;
     height: 5rem;
     float: left;
     margin-left: 9.8rem;
     font-family: OpenSans-Regular, PingFangSC-Regular, Arial, Helvetica, Microsoft YaHei, sans-serif;
     font-size: 36px;
     font-weight: bold
-
 }
 
 #points-percentage{
@@ -127,15 +138,16 @@ body{
     font-weight: bold;
     padding-top: 0.5rem;
     text-align: left;
+    margin-left: 0.0rem;
 }
 
 #points{
-    /* background-color: red; */
+    background-color: red;
     height: 0.9rem;
 }
 
 #percentage{
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 
@@ -146,14 +158,41 @@ body{
     width: 30vw;
     margin-top: 2rem;
     margin-left: 35.18%;
-    /* border-style: solid; */
-    /* border-radius: 1rem; */
-    /* overflow: hidden; */
+    /* outline-style: solid; */
+    border-radius: 1rem;
+    outline-offset: 0.1rem;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+
+    backdrop-filter: blur(5px);
 }
 
+.pop-stocks-titles{
+    font-weight: bold;
+}
+
+#AAPL,
+#TSLA,
+#AMZN,
+#AMD,
+#NVDA
+{
+    cursor: pointer;
+}
+
+#AAPL:hover,
+#TSLA:hover,
+#AMZN:hover,
+#AMD:hover,
+#NVDA:hover{
+    color: white;
+}
 
 .popular-stocks{
     background-color: yellow;
+    
 }
 
 .pop-stocks-header{
@@ -178,7 +217,7 @@ div ul{
 
 ul li{
     background-color: green;
-    margin-top: 1.2rem;
+    margin-top: 0.7rem;
     height: 38vh;
     width: 7.1vw;
     float: left;
@@ -189,37 +228,5 @@ ul li{
 
 }
 
-#container-header {
-    /* background-color: green; */
-    /* min-height: 5vh;
-    min-width: 100vw; */
-}
-
-#container-data {
-    /* background-color: yellow; */
-    /* min-height: 50vh;
-    min-width: 100vw;
-    display: flex; */
-}
-
-#left-div{
-    /* background-color: red; */
-    /* min-width: 50vw; */
-}
-
-#right-div{
-    /* background-color: olivedrab; */
-    /* min-width: 50vw; */
-}
-
-#stock-titles{
-    /* background-color: aqua; */
-    /* height: 25vh; */
-}
-
-#stock-data{
-    /* background-color: orange; */
-    /* height: 25vh; */
-}
 
 
